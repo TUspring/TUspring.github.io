@@ -1286,25 +1286,6 @@
 
     
   <url>
-    <loc>//litten.me/2017/02/10/brave-new-world/</loc>
-    <lastmod>2018-03-20T06:54:16.000Z</lastmod>
-    <data>
-        <display>
-        <title>美丽新世界</title>
-        <pubTime>2017-02-10T02:36:00.000Z</pubTime>
-        
-        <tag>杂谈</tag>
-         
-        <tag>笔记</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>//litten.me/2012/12/18/assassins-creed/</loc>
     <lastmod>2018-03-20T06:54:16.000Z</lastmod>
     <data>
@@ -1315,6 +1296,25 @@
         <tag>游戏</tag>
          
         <tag>旧事</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//litten.me/2017/02/10/brave-new-world/</loc>
+    <lastmod>2018-03-20T06:54:16.000Z</lastmod>
+    <data>
+        <display>
+        <title>美丽新世界</title>
+        <pubTime>2017-02-10T02:36:00.000Z</pubTime>
+        
+        <tag>杂谈</tag>
+         
+        <tag>笔记</tag>
          
          
            
