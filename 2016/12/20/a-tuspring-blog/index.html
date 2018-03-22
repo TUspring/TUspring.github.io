@@ -6,18 +6,46 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="//tuspring.com">
-  <title>Tag: hexo | Tuspring的博客</title>
+  <title>搭建个人博客hexo+github详细完整步骤 | Tuspring的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="迷途的小前端。">
-<meta name="keywords" content="前端,js,jquery,javascript,html5,开发者,程序猿,程序媛,极客,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,html,css,css3,用户体验">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Tuspring的博客">
-<meta property="og:url" content="//tuspring.com/tags/hexo/index.html">
+  <meta name="description" content="参考了别人的一些方法，在总结了自己的安装部署过程。把完整步骤分享给大家，如果我的步骤不行，大家可以参考其他人的（有用过Git、node、GitHub的应该可以很快搞定，没用过的可能要花费点时间！） 1现在开始搭建属于你的博客. 一、第一步：下载安装Git Git下载地址  Git安装步骤">
+<meta name="keywords" content="hexo,博客">
+<meta property="og:type" content="article">
+<meta property="og:title" content="搭建个人博客hexo+github详细完整步骤">
+<meta property="og:url" content="//tuspring.com/2016/12/20/a-tuspring-blog/index.html">
 <meta property="og:site_name" content="Tuspring的博客">
-<meta property="og:description" content="迷途的小前端。">
+<meta property="og:description" content="参考了别人的一些方法，在总结了自己的安装部署过程。把完整步骤分享给大家，如果我的步骤不行，大家可以参考其他人的（有用过Git、node、GitHub的应该可以很快搞定，没用过的可能要花费点时间！） 1现在开始搭建属于你的博客. 一、第一步：下载安装Git Git下载地址  Git安装步骤">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1531909-4da9b2db5ad099b5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/519">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1531909-44bddccbb0bc44fb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/483">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1531909-acb3ca9d69e0037f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1531909-ed306496f5c34312.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/237">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1531909-0b9d56643f6b27cc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/648">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1531909-b4cfc9da3f2063b9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/650">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1531909-f6ae9b7089741c89.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1531909-d0452912537c03e8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/658">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1531909-cd5743eda172deca.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/663">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1531909-c428c38d5b6f608d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/537">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1531909-9e10141923fcdf7a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/489">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1531909-0501276ece21c570.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/566">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1531909-4f9a111a4f87ff63.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1531909-f369abde30af73e0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/478">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1531909-a55880ce3bb59600.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/307">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1531909-3b9c7f217892c046.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1531909-8decffce7d3866b3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/494">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1531909-d3da80e668341305.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/469">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1531909-fe29bad673d85f37.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/246">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1531909-d0fc558c749b5569.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1531909-fb7e657ad2729c88.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/354">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1531909-72b3c30ffbfb1210.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/274">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1531909-5fdbcdab2249c01e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/506">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1531909-1f99441c5f2e0cfb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/359">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1531909-eeae3f8de4041eff.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1531909-a771d32449cbd5c8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700">
+<meta property="og:updated_time" content="2018-03-22T13:43:54.467Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Tuspring的博客">
-<meta name="twitter:description" content="迷途的小前端。">
+<meta name="twitter:title" content="搭建个人博客hexo+github详细完整步骤">
+<meta name="twitter:description" content="参考了别人的一些方法，在总结了自己的安装部署过程。把完整步骤分享给大家，如果我的步骤不行，大家可以参考其他人的（有用过Git、node、GitHub的应该可以很快搞定，没用过的可能要花费点时间！） 1现在开始搭建属于你的博客. 一、第一步：下载安装Git Git下载地址  Git安装步骤">
+<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/1531909-4da9b2db5ad099b5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/519">
   
     <link rel="alternative" href="/atom.xml" title="Tuspring的博客" type="application/atom+xml">
   
@@ -169,78 +197,131 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-a-tuspring-blog" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/12/21/a-github-pages/" class="archive-article-date">
-  	<time datetime="2016-12-21T10:40:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-12-21</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/12/21/a-github-pages/">GitHub Pages绑定域名</a>
+    <h1 class="article-title" itemprop="name">
+      搭建个人博客hexo+github详细完整步骤
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">域名</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/12/20/a-tuspring-blog/" class="archive-article-date">
+        
+        <a href="/2016/12/20/a-tuspring-blog/" class="archive-article-date">
   	<time datetime="2016-12-20T06:48:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-12-20</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/12/20/a-tuspring-blog/">搭建个人博客hexo+github详细完整步骤</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>参考了别人的一些方法，在总结了自己的安装部署过程。把完整步骤分享给大家，如果我的步骤不行，大家可以参考其他人的（有用过Git、node、GitHub的应该可以很快搞定，没用过的可能要花费点时间！）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">现在开始搭建属于你的博客.</span><br></pre></td></tr></table></figure>
+<h2 id="一、第一步：下载安装Git"><a href="#一、第一步：下载安装Git" class="headerlink" title="一、第一步：下载安装Git"></a>一、第一步：下载安装Git</h2><blockquote>
+<p><a href="https://gitforwindows.org/" target="_blank" rel="noopener">Git下载地址</a></p>
+</blockquote>
+<h3 id="Git安装步骤"><a href="#Git安装步骤" class="headerlink" title="Git安装步骤"></a>Git安装步骤</h3><p><img src="https://upload-images.jianshu.io/upload_images/1531909-4da9b2db5ad099b5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/519" alt=""></p>
+<a id="more"></a>
+<p><img src="https://upload-images.jianshu.io/upload_images/1531909-44bddccbb0bc44fb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/483" alt=""></p>
+<blockquote>
+<p>然后一路默认</p>
+</blockquote>
+<h2 id="二、第二步：下载安装node-js"><a href="#二、第二步：下载安装node-js" class="headerlink" title="二、第二步：下载安装node.js"></a>二、第二步：下载安装node.js</h2><h3 id="1、node-js下载地址"><a href="#1、node-js下载地址" class="headerlink" title="1、node.js下载地址"></a>1、<a href="https://nodejs.org/en/" target="_blank" rel="noopener">node.js下载地址</a></h3><p><img src="https://upload-images.jianshu.io/upload_images/1531909-acb3ca9d69e0037f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700" alt=""></p>
+<blockquote>
+<p>2、安装步骤：一路默认就行（安装路径根据自己需要更改）</p>
+</blockquote>
+<h2 id="三、第三步：安装hexo"><a href="#三、第三步：安装hexo" class="headerlink" title="三、第三步：安装hexo"></a>三、第三步：安装hexo</h2><blockquote>
+<p>1、利用 npm 命令即可安装。在任意位置点击鼠标右键，选择Git Bash</p>
+</blockquote>
+<p><img src="https://upload-images.jianshu.io/upload_images/1531909-ed306496f5c34312.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/237" alt=""></p>
+<blockquote>
+<p>2、输入命令：npm install -g hexo</p>
+</blockquote>
+<p><img src="https://upload-images.jianshu.io/upload_images/1531909-0b9d56643f6b27cc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/648" alt=""></p>
+<blockquote>
+<p>注意：-g是指全局安装hexo。</p>
+</blockquote>
+<h2 id="四、第四步：初始化Hexo"><a href="#四、第四步：初始化Hexo" class="headerlink" title="四、第四步：初始化Hexo"></a>四、第四步：初始化Hexo</h2><blockquote>
+<p>1、创建文件夹（我的是在E盘创建的Hexo–根据个人爱好创建博客文件夹）<br><img src="https://upload-images.jianshu.io/upload_images/1531909-b4cfc9da3f2063b9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/650" alt=""></p>
+</blockquote>
+<blockquote>
+<p>2、在Hexo文件下，右键运行Git Bash，输入命令：hexo init<br>（这里可能时间会长些，要耐心等待）<br><img src="https://upload-images.jianshu.io/upload_images/1531909-f6ae9b7089741c89.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700" alt=""></p>
+</blockquote>
+<blockquote>
+<p>初始化成功后生成的一些列文件,如下<br><img src="https://upload-images.jianshu.io/upload_images/1531909-d0452912537c03e8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/658" alt=""></p>
+</blockquote>
+<blockquote>
+<p>3、在_config.yml,进行基础配置 (在你创建的博客文件夹（hexo）下的_config.yml文件)</p>
+</blockquote>
+<p><img src="https://upload-images.jianshu.io/upload_images/1531909-cd5743eda172deca.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/663" alt=""></p>
+<blockquote>
+<p>其中可以在这里<a href="https://hexo.io/themes/" target="_blank" rel="noopener">浏览更多主题</a>，然后在Hexo文件夹下 Git Bash(在hexo文件夹下鼠标右键就可以看到GitBash，点击打开)</p>
+</blockquote>
+<blockquote>
+<p>输入命令：git clone <a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="noopener">https://github.com/iissnan/hexo-theme-next</a> themes/next（next为主题名字），来获得更多主题(我现在在用的主题<a href="https://github.com/ShanaMaid/hexo-theme-shana" target="_blank" rel="noopener">shana</a>)</p>
+</blockquote>
+<p><img src="https://upload-images.jianshu.io/upload_images/1531909-c428c38d5b6f608d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/537" alt=""></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/1531909-9e10141923fcdf7a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/489" alt=""></p>
+<blockquote>
+<p>4、本地浏览博客<br> 分别输入 如下命令：<br>     hexo g<br>     hexo s</p>
+</blockquote>
+<blockquote>
+<p> <a href="https://segmentfault.com/a/1190000002632530" target="_blank" rel="noopener">hexo常用命令</a></p>
+</blockquote>
+<p><img src="https://upload-images.jianshu.io/upload_images/1531909-0501276ece21c570.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/566" alt=""></p>
+<h5 id="在浏览器输入：localhost：4000-，就可以进行访问，效果如下："><a href="#在浏览器输入：localhost：4000-，就可以进行访问，效果如下：" class="headerlink" title="在浏览器输入：localhost：4000 ，就可以进行访问，效果如下："></a>在浏览器输入：localhost：4000 ，就可以进行访问，效果如下：</h5><p><img src="https://upload-images.jianshu.io/upload_images/1531909-4f9a111a4f87ff63.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700" alt=""></p>
+<h4 id="5、写文章"><a href="#5、写文章" class="headerlink" title="5、写文章"></a>5、写文章</h4><blockquote>
+<p>在E:\Hexo\source_posts文件下，新建.md文件就可以写文章<br><img src="https://upload-images.jianshu.io/upload_images/1531909-f369abde30af73e0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/478" alt=""></p>
+</blockquote>
+<blockquote>
+<hr>
+<h2 id="title-我的博客"><a href="#title-我的博客" class="headerlink" title="title: 我的博客"></a>title: 我的博客</h2></blockquote>
+<p><img src="https://upload-images.jianshu.io/upload_images/1531909-a55880ce3bb59600.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/307" alt=""><br><img src="https://upload-images.jianshu.io/upload_images/1531909-3b9c7f217892c046.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700" alt=""></p>
+<h2 id="五、部署到Github上"><a href="#五、部署到Github上" class="headerlink" title="五、部署到Github上"></a>五、部署到Github上</h2><blockquote>
+<p>1、申请Github账号，（注意别忘了进行账号邮箱验证）<br>2.new repository</p>
+</blockquote>
+<p><img src="https://upload-images.jianshu.io/upload_images/1531909-8decffce7d3866b3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/494" alt=""></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/1531909-d3da80e668341305.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/469" alt=""></p>
+<blockquote>
+<p>记得名字要一致。否则部署上GitHub的博客无法正常显示</p>
+</blockquote>
+<blockquote>
+<p>然后点击<br><img src="https://upload-images.jianshu.io/upload_images/1531909-fe29bad673d85f37.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/246" alt=""></p>
+</blockquote>
+<blockquote>
+<p>3、在_config.yml进行配置 (注意要保存, 记得要有空格否则报错)<br><img src="https://upload-images.jianshu.io/upload_images/1531909-d0fc558c749b5569.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700" alt=""></p>
+</blockquote>
+<blockquote>
+<p> 4、安装<a href="https://github.com/hexojs/hexo-deployer-git" target="_blank" rel="noopener">hexo-deployer-git</a>自动部署发布工具</p>
+</blockquote>
+<blockquote>
+<p>   npm install hexo-deployer-git  –save</p>
+</blockquote>
+<p><img src="https://upload-images.jianshu.io/upload_images/1531909-fb7e657ad2729c88.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/354" alt=""></p>
+<blockquote>
+<p>5、发布到Github<br>    输入如下命令：hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</p>
+</blockquote>
+<p> <img src="https://upload-images.jianshu.io/upload_images/1531909-72b3c30ffbfb1210.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/274" alt=""><br> <img src="https://upload-images.jianshu.io/upload_images/1531909-5fdbcdab2249c01e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/506" alt=""></p>
+<blockquote>
+<p>第一次发布需要验证github账号 (部署时可能还会提示你全局绑定github用户名和邮箱)<br> <img src="https://upload-images.jianshu.io/upload_images/1531909-1f99441c5f2e0cfb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/359" alt=""></p>
+</blockquote>
+<blockquote>
+<p>发布成功后，我们在仓库中看到这个<br> <img src="https://upload-images.jianshu.io/upload_images/1531909-eeae3f8de4041eff.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700" alt=""></p>
+</blockquote>
+<blockquote>
+<p>6、测试访问<br>在浏览器输入：<a href="https://tuspring.github.io/" target="_blank" rel="noopener">https://tuspring.github.io/</a> (你的repository)</p>
+</blockquote>
+<p> <img src="https://upload-images.jianshu.io/upload_images/1531909-a771d32449cbd5c8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700" alt=""></p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">最后，搭建完毕！ 噢耶</span><br></pre></td></tr></table></figure>
+      
 
-        <div class="article-info info-on-right">
-          
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -256,19 +337,108 @@ var _hmt = _hmt || [];
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACLklEQVR42u3awW7DQAiE4bz/S7tSr7a3MwOOuvjfUxQ5DV8OFBY+H/kcv+f8+u7J8zPn98+v7z7bdmDAgLEt41ieu9DXX+yGtf7edWwwYMB4D0NPsjpyHYqeiNexwYABA8a64HNDWYNhwIABoyvh1qnKgQEDBoysidVDrFzePd6Lw4ABY0NGZTDw9OsvzTdgwIDxjxlH+ehDza5vvIgBBgwYoxlK2acvVSgFXNcVnrHlAQMGjM0Z2cVW1lJ2jQQunocBA8ZohpvglHSps7su72DAgPEGxjogBaYvkOnh2j8ZDBgwRjOyP6rf0rsFZSllw4ABYyhDX7PIUmR2oeYmehgwYMxmPHc1lpWG2TswYMCYzagsQ7itrNua6uUjDBgwpjLcRKm8n/Gy9vhiEgsDBoxxjKfXKfQ06ibfP/5vwIABYxAjW5hwB43Z8NL4EWHAgDGa4ZZfelFYKRnd9A0DBozZDDuRFZrPLHFLY04YMGCMZnQNL91FLneo6Q5HYcCAMY+RNbH1RlQvB5s3RGDAgLEtQ9/O0INz++nKgBMGDBizGb337W4LWhknhDAYMGBsxTjMk61QuFd17lgCBgwYsxluqq0MDHpXwUpLGDBgwNiQkZV0ldpTv/Q3Ei4MGDBewMjKvsrKRfOSBwwYMGCYDap7xZaNSKUsDgMGjJcxKsHpnbSywGHUmzBgwBjEcMeT9ampDi7NV2HAgDGCURkMZItc+tVefUUDBgwYmzN+APhfIuCFVYd2AAAAAElFTkSuQmCC" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2016/12/21/a-github-pages/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          GitHub Pages绑定域名
+        
+      </div>
+    </a>
   
   
-    </div></section>
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
 
 
           </div>
@@ -291,9 +461,9 @@ var _hmt = _hmt || [];
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: true,
 		toc_hide_index: true,
