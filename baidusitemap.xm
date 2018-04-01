@@ -4,6 +4,27 @@
 
     
   <url>
+    <loc>//tuspring.com/2018/03/30/web-an-oral-quiz/</loc>
+    <lastmod>2018-04-01T13:18:11.692Z</lastmod>
+    <data>
+        <display>
+        <title>浅谈前端面试那些事</title>
+        <pubTime>2018-03-30T15:40:00.000Z</pubTime>
+        
+        <tag>前端</tag>
+         
+        <tag>web</tag>
+         
+        <tag>面试</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>//tuspring.com/2017/05/06/future_past/</loc>
     <lastmod>2018-03-31T17:51:00.325Z</lastmod>
     <data>
@@ -25,27 +46,6 @@
 
     
   <url>
-    <loc>//tuspring.com/2018/03/30/web-an-oral-quiz/</loc>
-    <lastmod>2018-03-31T16:39:54.768Z</lastmod>
-    <data>
-        <display>
-        <title>浅谈前端面试那些事</title>
-        <pubTime>2018-03-30T15:40:00.000Z</pubTime>
-        
-        <tag>前端</tag>
-         
-        <tag>web</tag>
-         
-        <tag>面试</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>//tuspring.com/2016/12/21/a-github-pages/</loc>
     <lastmod>2018-03-30T15:49:37.418Z</lastmod>
     <data>
@@ -53,9 +53,9 @@
         <title>GitHub Pages绑定域名</title>
         <pubTime>2016-12-21T10:40:00.000Z</pubTime>
         
-        <tag>hexo</tag>
-         
         <tag>域名</tag>
+         
+        <tag>hexo</tag>
          
          
            
