@@ -4,8 +4,29 @@
 
     
   <url>
+    <loc>//tuspring.com/2018/02/12/vue-plugin/</loc>
+    <lastmod>2018-04-04T17:55:31.847Z</lastmod>
+    <data>
+        <display>
+        <title>vue2.0+组件库集合</title>
+        <pubTime>2018-02-11T17:20:00.000Z</pubTime>
+        
+        <tag>vue2.0</tag>
+         
+        <tag>插件</tag>
+         
+        <tag>vueUI组件</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>//tuspring.com/2018/03/30/web-an-oral-quiz/</loc>
-    <lastmod>2018-04-01T13:18:11.692Z</lastmod>
+    <lastmod>2018-04-04T17:35:37.756Z</lastmod>
     <data>
         <display>
         <title>浅谈前端面试那些事</title>
@@ -26,7 +47,7 @@
     
   <url>
     <loc>//tuspring.com/2017/05/06/future_past/</loc>
-    <lastmod>2018-03-31T17:51:00.325Z</lastmod>
+    <lastmod>2018-04-01T16:10:37.465Z</lastmod>
     <data>
         <display>
         <title>如果有时光机的话，你想去未来还是回到过去？</title>
