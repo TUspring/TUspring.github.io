@@ -6,18 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="//tuspring.com">
-  <title>Tag: 域名 | Tuspring的博客</title>
+  <title>Vuex 简单入门 | Tuspring的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="迷途的小前端。">
-<meta name="keywords" content="前端,js,jquery,javascript,html5,开发者,程序猿,程序媛,极客,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,html,css,css3,用户体验">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Tuspring的博客">
-<meta property="og:url" content="//tuspring.com/tags/域名/index.html">
+  <meta name="description" content="什么是Vuex 在Vue中，多组件的开发给我们带来了很多的方便，但同时当项目规模变大的时候，多个组件间的数据通信和状态管理就显得难以维护。而Vuex就此应运而生。将状态管理单独拎出来，应用统一的方式进行处理，在后期维护的过程中数据的修改和维护就变得简单而清晰了。Vuex采用和Redux类似的单向数据流的方式来管理数据。用户界面负责触发动作（Action)进而改变对应状态（State），从而反映到视">
+<meta name="keywords" content="前端,Vuex">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Vuex 简单入门">
+<meta property="og:url" content="//tuspring.com/2017/11/28/vuex/index.html">
 <meta property="og:site_name" content="Tuspring的博客">
-<meta property="og:description" content="迷途的小前端。">
+<meta property="og:description" content="什么是Vuex 在Vue中，多组件的开发给我们带来了很多的方便，但同时当项目规模变大的时候，多个组件间的数据通信和状态管理就显得难以维护。而Vuex就此应运而生。将状态管理单独拎出来，应用统一的方式进行处理，在后期维护的过程中数据的修改和维护就变得简单而清晰了。Vuex采用和Redux类似的单向数据流的方式来管理数据。用户界面负责触发动作（Action)进而改变对应状态（State），从而反映到视">
+<meta property="og:image" content="//tuspring.com/assets/blogImg/vuex1.png">
+<meta property="og:image" content="//tuspring.com/assets/blogImg/vuex2.png">
+<meta property="og:updated_time" content="2018-04-07T07:58:10.597Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Tuspring的博客">
-<meta name="twitter:description" content="迷途的小前端。">
+<meta name="twitter:title" content="Vuex 简单入门">
+<meta name="twitter:description" content="什么是Vuex 在Vue中，多组件的开发给我们带来了很多的方便，但同时当项目规模变大的时候，多个组件间的数据通信和状态管理就显得难以维护。而Vuex就此应运而生。将状态管理单独拎出来，应用统一的方式进行处理，在后期维护的过程中数据的修改和维护就变得简单而清晰了。Vuex采用和Redux类似的单向数据流的方式来管理数据。用户界面负责触发动作（Action)进而改变对应状态（State），从而反映到视">
+<meta name="twitter:image" content="//tuspring.com/assets/blogImg/vuex1.png">
   
     <link rel="alternative" href="/atom.xml" title="Tuspring的博客" type="application/atom+xml">
   
@@ -171,64 +175,221 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-vuex" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/12/21/a-github-pages/" class="archive-article-date">
-  	<time datetime="2016-12-21T10:40:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-12-21</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/12/21/a-github-pages/">GitHub Pages绑定域名</a>
+    <h1 class="article-title" itemprop="name">
+      Vuex 简单入门
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2017/11/28/vuex/" class="archive-article-date">
+  	<time datetime="2017-11-28T11:20:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-28</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="什么是Vuex"><a href="#什么是Vuex" class="headerlink" title="什么是Vuex"></a>什么是Vuex</h2><blockquote>
+<p>在Vue中，多组件的开发给我们带来了很多的方便，但同时当项目规模变大的时候，多个组件间的数据通信和状态管理就显得难以维护。而Vuex就此应运而生。将状态管理单独拎出来，应用统一的方式进行处理，在后期维护的过程中数据的修改和维护就变得简单而清晰了。<code>Vuex</code>采用和<code>Redux</code>类似的单向数据流的方式来管理数据。用户界面负责触发动作（Action)进而改变对应状态（State），从而反映到视图（View）上。如下图所示：</p>
+</blockquote>
+<a id="more"></a>
+<p><img src="/assets/blogImg/vuex1.png" alt=""></p>
+<h1 id="使用Vuex"><a href="#使用Vuex" class="headerlink" title="使用Vuex"></a>使用Vuex</h1><p>安装:</p>
+<blockquote>
+<p>npm install –save vuex</p>
+</blockquote>
+<p>引入：<br><figure class="highlight clean"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Vuex <span class="keyword">from</span> <span class="string">'vuex'</span></span><br><span class="line"><span class="keyword">import</span> Vue <span class="keyword">from</span> <span class="string">'vue'</span></span><br><span class="line"></span><br><span class="line">Vue.use(Vuex)</span><br></pre></td></tr></table></figure></p>
+<h1 id="Vuex的组成部分"><a href="#Vuex的组成部分" class="headerlink" title="Vuex的组成部分"></a>Vuex的组成部分</h1><p>完整的应用Vuex开发的应用结构应该是这样的：<br><img src="/assets/blogImg/vuex2.png" alt=""><br>下面针对比较核心的部分进行说明。</p>
+<h1 id="State"><a href="#State" class="headerlink" title="State"></a>State</h1><p>State负责存储整个应用的状态数据，一般需要在使用的时候在跟节点注入store对象，后期就可以使用<code>this.$store.state</code>直接获取状态<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//store为实例化生成的</span></span><br><span class="line"><span class="keyword">import</span> store <span class="keyword">from</span> <span class="string">'./store'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">new</span> Vue(&#123;</span><br><span class="line">  el: <span class="string">'#app'</span>,</span><br><span class="line">  store,</span><br><span class="line">  render: <span class="function"><span class="params">h</span> =&gt;</span> h(App)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
+<p>这个store可以理解为一个容器，包含着应用中的state等。实例化生成store的过程是：<br><figure class="highlight nimrod"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> mutations = <span class="meta">&#123;...&#125;</span>;</span><br><span class="line"><span class="keyword">const</span> actions = <span class="meta">&#123;...&#125;</span>;</span><br><span class="line"><span class="keyword">const</span> state = <span class="meta">&#123;...&#125;</span>;</span><br><span class="line"></span><br><span class="line"><span class="type">Vuex</span>.<span class="type">Store</span>(&#123;</span><br><span class="line">  state,</span><br><span class="line">  actions,</span><br><span class="line">  mutation</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+<p>后续在组件中使用的过程中，如果想要获取对应的状态你就可以直接使用<code>this.$store.state</code>获取，当然，也可以利用vuex提供的mapState辅助函数将state映射到计算属性中去，如<br><figure class="highlight pf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">//我是组件</span><br><span class="line">import &#123;mapState&#125; <span class="keyword">from</span> 'vuex'</span><br><span class="line"></span><br><span class="line">export <span class="keyword">default</span> &#123;</span><br><span class="line">  computed: mapState(&#123;</span><br><span class="line">    count: <span class="keyword">state</span> =&gt; <span class="keyword">state</span>.count</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>这样直接就可以在组件中直接使用了。</p>
+<h1 id="Mutations"><a href="#Mutations" class="headerlink" title="Mutations"></a>Mutations</h1><p>Mutations的中文意思是“变化”，利用它可以更改状态，本质就是用来处理数据的函数，其接收唯一参数值state。<code>store.commit(mutationName)</code>是用来触发一个<code>mutation</code>的方法。需要记住的是，定义的mutation必须是同步函数，否则<code>devtool</code>中的数据将可能出现问题，使状态改变变得难以跟踪。<br><figure class="highlight pf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">const mutations = &#123;</span><br><span class="line">  mutationName(<span class="keyword">state</span>) &#123;</span><br><span class="line">    //在这里改变<span class="keyword">state</span>中的数据</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>在组件中触发：<br><figure class="highlight xquery"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">//我是一个组件</span><br><span class="line">export <span class="keyword">default</span> &#123;</span><br><span class="line">  methods: &#123;</span><br><span class="line">    handleClick() &#123;</span><br><span class="line">      this.$store.commit(<span class="string">'mutationName'</span>)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>或者使用辅助函数<code>mapMutations</code>直接将触发函数映射到<code>methods</code>上，这样就能在元素事件绑定上直接使用了。如：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123;mapMutations&#125; <span class="keyword">from</span> <span class="string">'vuex'</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//我是一个组件</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  methods: mapMutations([</span><br><span class="line">    <span class="string">'mutationName'</span></span><br><span class="line">  ])</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h1 id="Actions"><a href="#Actions" class="headerlink" title="Actions"></a>Actions</h1><p>Actions也可以用于改变状态，不过是通过触发mutation实现的，重要的是可以包含异步操作。其辅助函数是<code>mapActions</code>与<code>mapMutations</code>类似，也是绑定在组件的methods上的。如果选择直接触发的话，使用<code>this.$store.dispatch(actionName)</code>方法。<br><figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//定义Actions</span></span><br><span class="line"><span class="keyword">const</span> actions = &#123;</span><br><span class="line">  actionName(&#123; commit &#125;) &#123;</span><br><span class="line">    <span class="comment">//dosomething</span></span><br><span class="line">    commit(<span class="string">'mutationName'</span>)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>在组件中使用<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123;mapActions&#125; <span class="keyword">from</span> <span class="string">'vuex'</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//我是一个组件</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  methods: mapActions([</span><br><span class="line">    <span class="string">'actionName'</span>,</span><br><span class="line">  ])</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h1 id="Getters"><a href="#Getters" class="headerlink" title="Getters"></a>Getters</h1><p>有些状态需要做二次处理，就可以使用<code>getters</code>。通过 <code>this.$store.getters.valueName</code> 对派生出来的状态进行访问。或者直接使用辅助函数<code>mapGetters</code>将其映射到本地计算属性中去。<br><figure class="highlight pf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">const getters = &#123;</span><br><span class="line">  strLength: <span class="keyword">state</span> =&gt; <span class="keyword">state</span>.aString.length</span><br><span class="line">&#125;</span><br><span class="line">//上面的代码根据aString状态派生出了一个strLength状态</span><br></pre></td></tr></table></figure></p>
+<p>在组件中使用<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123;mapGetters&#125; <span class="keyword">from</span> <span class="string">'vuex'</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//我是一个组件</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  computed: mapGetters([</span><br><span class="line">    <span class="string">'strLength'</span></span><br><span class="line">  ])</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h1 id="Plugins"><a href="#Plugins" class="headerlink" title="Plugins"></a>Plugins</h1><p>插件就是一个钩子函数，在初始化store的时候引入即可。比较常用的是内置的logger插件，用于作为调试使用。<br><figure class="highlight clean"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> createLogger <span class="keyword">from</span> <span class="string">'vuex/dist/logger'</span></span><br><span class="line">const store = Vuex.Store(&#123;</span><br><span class="line">  ...</span><br><span class="line">  plugins: [createLogger()]</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
+<p>最后，还有一些高级用法，如严格模式，测试等可能使用频率不会特别高。有需要的时候查官方文档就可以了。总的来说，Vuex还是相对比较简单的，特别是如果之前有学过Flux,Redux之类的话，上手起来更加容易。</p>
+<p>参考文档:  <a href="http://vuex.vuejs.org/zh-cn/index.html" target="_blank" rel="noopener">http://vuex.vuejs.org/zh-cn/index.html</a></p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/alipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/weixin.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">域名</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Vuex</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAAAAACKZ2kyAAAByUlEQVR42u3aS27DMAwFwNz/0inQVYGk9iMpCV6MV0E+9igLgnrU6xVf79/r7+vPK/nm5/uvHRcuLu6Y+768/kMkd7t+P/kLvjwLFxf3ILdavPKiVqXf2HBxcR/GnTcx1eKIi4v7fG7++LwZwsXFfTJ3bbNS3SBt2avh4uIOuL3AdO3r7fkuLi7uoqlEXlB2/OrLfXBxcY9wq5uWydAl2ThFZQ4XF3czd9Vjojij+OlNCcPFxd3GnW+E8sgjp1SDV1xc3B3c6xg0aUTyrUvSPN0Er7i4uEe4k/aiN2TNF3MjwcXF3catDlZ7rU9+vKP5j+Li4i7l5pnkvOlZHILg4uJu464aoE5AhbEKLi7uQW5+YCIPRpNWKS+OuLi4Z7irjlBcl7Z8GTclEhcX9wi3F3/kIUiPWwhMcXFxN3DL3VA8ROkt9caDi4t7kDsZdVSbm97CcHFxz3N7h6uqC8jHM5EdFxd3G3ftUYk8TMkDl14LhYuLO+f2Hp+PXiZHOr7cHxcX9yC3N1LtbYqamx9cXNxHckcHqoLSGUWruLi4D+bmUWm1ubkJWHFxcQ9y85C0x6pmMwtiEVxc3AF3HphWD1WsXRguLu5S7g+FOnadadmqsAAAAABJRU5ErkJggg==" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2018/02/12/vue-plugin/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          vue2.0+组件库集合
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2017/05/06/future_past/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">如果有时光机的话，你想去未来还是回到过去？</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+  <div id="SOHUCS" sid="vuex" ></div> 
+<script type="text/javascript"> 
+(function(){ 
+var appid = "cytxJgion"; 
+var conf = "prod_5cb76ed6ea83a94021d9a7fd251913e1"; 
+var width = window.innerWidth || document.documentElement.clientWidth; 
+if (width < 960) { 
+window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("//changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); </script>
+  
+
+  
 
 
           </div>
@@ -251,9 +412,9 @@ var _hmt = _hmt || [];
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: true,
 		toc_hide_index: true,

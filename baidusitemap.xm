@@ -4,8 +4,27 @@
 
     
   <url>
+    <loc>//tuspring.com/2017/11/28/vuex/</loc>
+    <lastmod>2018-04-07T07:58:10.597Z</lastmod>
+    <data>
+        <display>
+        <title>Vuex 简单入门</title>
+        <pubTime>2017-11-28T11:20:00.000Z</pubTime>
+        
+        <tag>前端</tag>
+         
+        <tag>Vuex</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>//tuspring.com/2018/02/12/vue-plugin/</loc>
-    <lastmod>2018-04-04T17:55:31.847Z</lastmod>
+    <lastmod>2018-04-07T07:57:16.324Z</lastmod>
     <data>
         <display>
         <title>vue2.0+组件库集合</title>
@@ -74,9 +93,9 @@
         <title>GitHub Pages绑定域名</title>
         <pubTime>2016-12-21T10:40:00.000Z</pubTime>
         
-        <tag>域名</tag>
-         
         <tag>hexo</tag>
+         
+        <tag>域名</tag>
          
          
            
