@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>//tuspring.com/photos/index.html</loc>
+    
+    <lastmod>2018-04-07T13:58:43.671Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>//tuspring.com/photos/ins.json</loc>
+    
+    <lastmod>2018-04-07T13:57:33.336Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>//tuspring.com/2017/11/28/vuex/</loc>
     
     <lastmod>2018-04-07T07:58:10.597Z</lastmod>
@@ -40,20 +54,6 @@
     <loc>//tuspring.com/2016/12/20/a-tuspring-blog/</loc>
     
     <lastmod>2018-03-30T15:49:37.387Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>//tuspring.com/photos/ins.json</loc>
-    
-    <lastmod>2018-03-27T15:50:02.858Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>//tuspring.com/photos/index.html</loc>
-    
-    <lastmod>2018-03-20T06:54:18.000Z</lastmod>
     
   </url>
   

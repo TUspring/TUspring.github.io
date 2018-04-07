@@ -3,6 +3,9 @@
 
 
     
+    
+    
+    
   <url>
     <loc>//tuspring.com/2017/11/28/vuex/</loc>
     <lastmod>2018-04-07T07:58:10.597Z</lastmod>
@@ -93,9 +96,9 @@
         <title>GitHub Pages绑定域名</title>
         <pubTime>2016-12-21T10:40:00.000Z</pubTime>
         
-        <tag>hexo</tag>
-         
         <tag>域名</tag>
+         
+        <tag>hexo</tag>
          
          
            
@@ -122,9 +125,6 @@
     </data>
     </url>
 
-    
-    
-    
     
     
 </urlset>

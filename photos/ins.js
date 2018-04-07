@@ -118,6 +118,9 @@
         for (var i = 0, len = data.link.length; i < len; i++) {
           var minSrc = 'http://litten.me/ins-min/' + data.link[i] + '.min.jpg';
           var src = 'http://litten.me/ins/' + data.link[i];
+            // var minSrc = 'http://p6ikoby4g.bkt.clouddn.com/' + data.link[i] + '.jpg';
+            // var src = 'http://p6ikoby4g.bkt.clouddn.com/' + data.link[i];
+            // http://p6ikoby4g.bkt.clouddn.com/  tuspring七牛
           var type = data.type[i];
           var target = src + (type === 'video' ? '.mp4' : '.jpg');
           src += '.jpg';
