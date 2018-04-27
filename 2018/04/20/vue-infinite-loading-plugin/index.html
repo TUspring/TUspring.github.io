@@ -6,45 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="//tuspring.com">
-  <title>搭建个人博客hexo+github详细完整步骤 | Tuspring的博客</title>
+  <title>vue2.0无限滚动加载数据插件 | Tuspring的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="参考了别人的一些方法，在总结了自己的安装部署过程。把完整步骤分享给大家，如果我的步骤不行，大家可以参考其他人的（有用过Git、node、GitHub的应该可以很快搞定，没用过的可能要花费点时间！） 1现在开始搭建属于你的博客. 一、第一步：下载安装Git Git下载地址">
-<meta name="keywords" content="hexo,博客">
+  <meta name="description" content="最新做vue项目用到下拉滚动加载数据功能，由于选的UI库（element）没有这个组件，就用Vue-infinite-loading 这个插件代替，使用中遇到的一些问题及使用方法，总结作记录！  安装：npm install vue-infinite-loading –save">
+<meta name="keywords" content="无限滚动,下拉加载">
 <meta property="og:type" content="article">
-<meta property="og:title" content="搭建个人博客hexo+github详细完整步骤">
-<meta property="og:url" content="//tuspring.com/2017/01/20/a-tuspring-blog/index.html">
+<meta property="og:title" content="vue2.0无限滚动加载数据插件">
+<meta property="og:url" content="//tuspring.com/2018/04/20/vue-infinite-loading-plugin/index.html">
 <meta property="og:site_name" content="Tuspring的博客">
-<meta property="og:description" content="参考了别人的一些方法，在总结了自己的安装部署过程。把完整步骤分享给大家，如果我的步骤不行，大家可以参考其他人的（有用过Git、node、GitHub的应该可以很快搞定，没用过的可能要花费点时间！） 1现在开始搭建属于你的博客. 一、第一步：下载安装Git Git下载地址">
-<meta property="og:image" content="//tuspring.com/assets/img/a-github-pages/pic1.png">
-<meta property="og:image" content="//tuspring.com/assets/img/a-github-pages/pic2.png">
-<meta property="og:image" content="//tuspring.com/assets/img/a-github-pages/pic3.jpg">
-<meta property="og:image" content="//tuspring.com/assets/img/a-github-pages/pic4.png">
-<meta property="og:image" content="//tuspring.com/assets/img/a-github-pages/pic5.png">
-<meta property="og:image" content="//tuspring.com/assets/img/a-github-pages/pic6.png">
-<meta property="og:image" content="//tuspring.com/assets/img/a-github-pages/pic7.png">
-<meta property="og:image" content="//tuspring.com/assets/img/a-github-pages/pic8.png">
-<meta property="og:image" content="//tuspring.com/assets/img/a-github-pages/pic9.png">
-<meta property="og:image" content="//tuspring.com/assets/img/a-github-pages/pic10.png">
-<meta property="og:image" content="//tuspring.com/assets/img/a-github-pages/pic12.png">
-<meta property="og:image" content="//tuspring.com/assets/img/a-github-pages/pic11.png">
-<meta property="og:image" content="//tuspring.com/assets/img/a-github-pages/pic13.png">
-<meta property="og:image" content="//tuspring.com/assets/img/a-github-pages/pic14.png">
-<meta property="og:image" content="//tuspring.com/assets/img/a-github-pages/pic15.png">
-<meta property="og:image" content="//tuspring.com/assets/img/a-github-pages/pic16.png">
-<meta property="og:image" content="//tuspring.com/assets/img/a-github-pages/pic17.png">
-<meta property="og:image" content="//tuspring.com/assets/img/a-github-pages/pic18.jpg">
-<meta property="og:image" content="//tuspring.com/assets/img/a-github-pages/pic19.jpg">
-<meta property="og:image" content="//tuspring.com/assets/img/a-github-pages/pic20.png">
-<meta property="og:image" content="//tuspring.com/assets/img/a-github-pages/pic21.png">
-<meta property="og:image" content="//tuspring.com/assets/img/a-github-pages/pic22.png">
-<meta property="og:image" content="//tuspring.com/assets/img/a-github-pages/pic23.png">
-<meta property="og:image" content="//tuspring.com/assets/img/a-github-pages/pic24.png">
-<meta property="og:image" content="//tuspring.com/assets/img/a-github-pages/pic25.png">
-<meta property="og:updated_time" content="2018-04-27T15:24:54.019Z">
+<meta property="og:description" content="最新做vue项目用到下拉滚动加载数据功能，由于选的UI库（element）没有这个组件，就用Vue-infinite-loading 这个插件代替，使用中遇到的一些问题及使用方法，总结作记录！  安装：npm install vue-infinite-loading –save">
+<meta property="og:updated_time" content="2018-04-27T16:48:45.684Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="搭建个人博客hexo+github详细完整步骤">
-<meta name="twitter:description" content="参考了别人的一些方法，在总结了自己的安装部署过程。把完整步骤分享给大家，如果我的步骤不行，大家可以参考其他人的（有用过Git、node、GitHub的应该可以很快搞定，没用过的可能要花费点时间！） 1现在开始搭建属于你的博客. 一、第一步：下载安装Git Git下载地址">
-<meta name="twitter:image" content="//tuspring.com/assets/img/a-github-pages/pic1.png">
+<meta name="twitter:title" content="vue2.0无限滚动加载数据插件">
+<meta name="twitter:description" content="最新做vue项目用到下拉滚动加载数据功能，由于选的UI库（element）没有这个组件，就用Vue-infinite-loading 这个插件代替，使用中遇到的一些问题及使用方法，总结作记录！  安装：npm install vue-infinite-loading –save">
   
     <link rel="alternative" href="/atom.xml" title="Tuspring的博客" type="application/atom+xml">
   
@@ -198,127 +172,67 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-a-tuspring-blog" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-vue-infinite-loading-plugin" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      搭建个人博客hexo+github详细完整步骤
+      vue2.0无限滚动加载数据插件
     </h1>
   
 
         
-        <a href="/2017/01/20/a-tuspring-blog/" class="archive-article-date">
-  	<time datetime="2017-01-20T06:48:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-01-20</time>
+        <a href="/2018/04/20/vue-infinite-loading-plugin/" class="archive-article-date">
+  	<time datetime="2018-04-20T15:15:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-20</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>参考了别人的一些方法，在总结了自己的安装部署过程。把完整步骤分享给大家，如果我的步骤不行，大家可以参考其他人的（有用过Git、node、GitHub的应该可以很快搞定，没用过的可能要花费点时间！）</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">现在开始搭建属于你的博客.</span><br></pre></td></tr></table></figure>
-<h2 id="一、第一步：下载安装Git"><a href="#一、第一步：下载安装Git" class="headerlink" title="一、第一步：下载安装Git"></a>一、第一步：下载安装Git</h2><blockquote>
-<p><a href="https://gitforwindows.org/" target="_blank" rel="noopener">Git下载地址</a></p>
+        <p>最新做vue项目用到下拉滚动加载数据功能，由于选的UI库（element）没有这个组件，就用Vue-infinite-loading 这个插件代替，使用中遇到的一些问题及使用方法，总结作记录！</p>
+<blockquote>
+<p>安装：npm install vue-infinite-loading –save</p>
 </blockquote>
 <a id="more"></a>
-<h3 id="Git安装步骤"><a href="#Git安装步骤" class="headerlink" title="Git安装步骤"></a>Git安装步骤</h3><p><img src="/assets/img/a-github-pages/pic1.png" alt=""></p>
-<p><img src="/assets/img/a-github-pages/pic2.png" alt=""></p>
-<blockquote>
-<p>然后一路默认</p>
-</blockquote>
-<h2 id="二、第二步：下载安装node-js"><a href="#二、第二步：下载安装node-js" class="headerlink" title="二、第二步：下载安装node.js"></a>二、第二步：下载安装node.js</h2><h3 id="1、node-js下载地址"><a href="#1、node-js下载地址" class="headerlink" title="1、node.js下载地址"></a>1、<a href="https://nodejs.org/en/" target="_blank" rel="noopener">node.js下载地址</a></h3><p><img src="/assets/img/a-github-pages/pic3.jpg" alt=""></p>
-<blockquote>
-<p>2、安装步骤：一路默认就行（安装路径根据自己需要更改）</p>
-</blockquote>
-<h2 id="三、第三步：安装hexo"><a href="#三、第三步：安装hexo" class="headerlink" title="三、第三步：安装hexo"></a>三、第三步：安装hexo</h2><blockquote>
-<p>1、利用 npm 命令即可安装。在任意位置点击鼠标右键，选择Git Bash</p>
-</blockquote>
-<p><img src="/assets/img/a-github-pages/pic4.png" alt=""></p>
-<blockquote>
-<p>2、输入命令：npm install -g hexo</p>
-</blockquote>
-<p><img src="/assets/img/a-github-pages/pic5.png" alt=""></p>
-<blockquote>
-<p>注意：-g是指全局安装hexo。</p>
-</blockquote>
-<h2 id="四、第四步：初始化Hexo"><a href="#四、第四步：初始化Hexo" class="headerlink" title="四、第四步：初始化Hexo"></a>四、第四步：初始化Hexo</h2><blockquote>
-<p>1、创建文件夹（我的是在E盘创建的Hexo–根据个人爱好创建博客文件夹）<br><img src="/assets/img/a-github-pages/pic6.png" alt=""></p>
+<h3 id="引入"><a href="#引入" class="headerlink" title="引入"></a>引入</h3><blockquote>
+<p>ES6<br><figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> InfiniteLoading <span class="keyword">from</span> <span class="string">'vue-infinite-loading'</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  components: &#123;</span><br><span class="line">    InfiniteLoading,</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
 </blockquote>
 <blockquote>
-<p>2、在Hexo文件下，右键运行Git Bash，输入命令：hexo init<br>（这里可能时间会长些，要耐心等待）<br><img src="/assets/img/a-github-pages/pic7.png" alt=""></p>
+<p>CommonJS<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> InfiniteLoading = <span class="built_in">require</span>(<span class="string">'vue-infinite-loading'</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  components: &#123;</span><br><span class="line">    InfiniteLoading,</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<h3 id="1-用法一（基本用法）"><a href="#1-用法一（基本用法）" class="headerlink" title="1.用法一（基本用法）"></a>1.用法一（基本用法）</h3><blockquote>
+<p>Template<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span> <span class="attr">v-for</span>=<span class="string">"item in list"</span>&gt;</span></span><br><span class="line">    Line:</span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span> <span class="attr">v-text</span>=<span class="string">"item"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!--infinite-loading这个组件要放在列表的底部，滚动的盒子里面！--&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">infinite-loading</span> @<span class="attr">infinite</span>=<span class="string">"infiniteHandler"</span>&gt;</span><span class="tag">&lt;/<span class="name">infinite-loading</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
 </blockquote>
 <blockquote>
-<p>初始化成功后生成的一些列文件,如下<br><img src="/assets/img/a-github-pages/pic8.png" alt=""></p>
+<p>Script<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> InfiniteLoading <span class="keyword">from</span> <span class="string">'vue-infinite-loading'</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  data() &#123;</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">      list: [],</span><br><span class="line">    &#125;;</span><br><span class="line">  &#125;,</span><br><span class="line">  methods: &#123;</span><br><span class="line">    infiniteHandler($state) &#123;</span><br><span class="line">      setTimeout(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">        <span class="keyword">const</span> temp = [];</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="keyword">this</span>.list.length + <span class="number">1</span>; i &lt;= <span class="keyword">this</span>.list.length + <span class="number">20</span>; i++) &#123;</span><br><span class="line">          temp.push(i);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">this</span>.list = <span class="keyword">this</span>.list.concat(temp);</span><br><span class="line">        $state.loaded();</span><br><span class="line">      &#125;, <span class="number">1000</span>);</span><br><span class="line">    &#125;,</span><br><span class="line">  &#125;,</span><br><span class="line">  components: &#123;</span><br><span class="line">    InfiniteLoading,</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<h3 id="2-用法二（一般的分页数据）"><a href="#2-用法二（一般的分页数据）" class="headerlink" title="2.用法二（一般的分页数据）"></a>2.用法二（一般的分页数据）</h3><blockquote>
+<p>Template<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"hacker-news-list"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">"hacker-news-item"</span> <span class="attr">v-for</span>=<span class="string">"(item, key) in list"</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">infinite-loading</span> @<span class="attr">infinite</span>=<span class="string">"infiniteHandler"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span> <span class="attr">slot</span>=<span class="string">"no-more"</span>&gt;</span></span><br><span class="line">      There is no more Hacker News</span><br><span class="line">    <span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">infinite-loading</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
 </blockquote>
 <blockquote>
-<p>3、在_config.yml,进行基础配置 (在你创建的博客文件夹（hexo）下的_config.yml文件)</p>
-</blockquote>
-<p><img src="/assets/img/a-github-pages/pic9.png" alt=""></p>
-<blockquote>
-<p>其中可以在这里<a href="https://hexo.io/themes/" target="_blank" rel="noopener">浏览更多主题</a>，然后在Hexo文件夹下 Git Bash(在hexo文件夹下鼠标右键就可以看到GitBash，点击打开)</p>
+<p>Script<br><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> InfiniteLoading from <span class="string">'vue-infinite-loading'</span>;</span><br><span class="line"><span class="keyword">import</span> axios from <span class="string">'axios'</span>;</span><br><span class="line"></span><br><span class="line">export <span class="keyword">default</span> &#123;</span><br><span class="line">  <span class="keyword">data</span>() &#123;</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">      list: [],</span><br><span class="line">    &#125;;</span><br><span class="line">  &#125;,</span><br><span class="line">  methods: &#123;</span><br><span class="line">    infiniteHandler($state) &#123;</span><br><span class="line">     const api=<span class="string">"http://xxxx.com/xxx"</span></span><br><span class="line">      axios.<span class="keyword">get</span>(api, &#123;   <span class="comment">//api为你请求数据地址</span></span><br><span class="line">        params: &#123;</span><br><span class="line">          page: <span class="keyword">this</span>.list.length / <span class="number">10</span> + <span class="number">1</span>,   <span class="comment">//页码参数（10条每页）</span></span><br><span class="line">        &#125;,</span><br><span class="line">      &#125;).then((response) =&gt; &#123;</span><br><span class="line">        <span class="keyword">if</span> (response.<span class="keyword">data</span>.length) &#123;</span><br><span class="line">          <span class="keyword">this</span>.list = <span class="keyword">this</span>.list.concat(response.<span class="keyword">data</span>);  <span class="comment">//response.data为你请求接口返回的数组列表</span></span><br><span class="line">          $state.loaded();</span><br><span class="line">          <span class="keyword">if</span> (<span class="keyword">this</span>.list.length / <span class="number">10</span> === <span class="number">10</span>) &#123;</span><br><span class="line">            $state.complete(); <span class="comment">//这里是加载了10页数据，设置不在加载</span></span><br><span class="line">          &#125;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">          $state.complete();</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;);</span><br><span class="line">    &#125;,</span><br><span class="line">  &#125;,</span><br><span class="line">  components: &#123;</span><br><span class="line">    InfiniteLoading,</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
 </blockquote>
 <blockquote>
-<p>输入命令：git clone <a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="noopener">https://github.com/iissnan/hexo-theme-next</a> themes/next（next为主题名字），来获得更多主题(我现在在用的主题<a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="noopener">hexo-theme-yilia</a>)</p>
+<p>$state:  该组件会传递一个特殊的事件参数$state给事件处理器来改变加载状态，<br>$state参数包括三个方法，它们是loaded方法，complete方法和reset方法。</p>
 </blockquote>
-<p><img src="/assets/img/a-github-pages/pic10.png" alt=""></p>
-<p><img src="/assets/img/a-github-pages/pic12.png" alt=""></p>
-<blockquote>
-<p>4、本地浏览博客<br> 分别输入 如下命令：<br>     hexo g<br>     hexo s</p>
-</blockquote>
-<blockquote>
-<p> <a href="https://segmentfault.com/a/1190000002632530" target="_blank" rel="noopener">hexo常用命令</a></p>
-</blockquote>
-<p><img src="/assets/img/a-github-pages/pic11.png" alt=""></p>
-<h5 id="在浏览器输入：localhost：4000-，就可以进行访问，效果如下："><a href="#在浏览器输入：localhost：4000-，就可以进行访问，效果如下：" class="headerlink" title="在浏览器输入：localhost：4000 ，就可以进行访问，效果如下："></a>在浏览器输入：localhost：4000 ，就可以进行访问，效果如下：</h5><p><img src="/assets/img/a-github-pages/pic13.png" alt=""></p>
-<h4 id="5、写文章"><a href="#5、写文章" class="headerlink" title="5、写文章"></a>5、写文章</h4><blockquote>
-<p>在E:\Hexo\source_posts文件下，新建.md文件就可以写文章<br><img src="/assets/img/a-github-pages/pic14.png" alt=""></p>
+<ul>
+<li>loaded方法用于在每次加载数据后停止播放动画，然后该组件将准备好进行下一次触发。</li>
+<li>complete方法用于完成完整的无限加载，则该组件将不再处理任何滚动操作。如果在loaded调用complete方法时永远不会调用该方法，则此组件将显示用户的否结果消息，如果不是，则将显示不再有用户消息，并且可以按slot设其它内容</li>
+<li>reset方法是将组件返回到原来的状态</li>
+</ul>
+<h3 id="3-用法三"><a href="#3-用法三" class="headerlink" title="3.用法三"></a>3.用法三</h3><blockquote>
+<p>一般的无限滚动下拉加载数据会带有筛选条件。比如根据不同条件选择出来的列表，或者改变某个状态重新渲染列表就要用这个用法了</p>
 </blockquote>
 <blockquote>
-<hr>
-<h2 id="title-我的博客"><a href="#title-我的博客" class="headerlink" title="title: 我的博客"></a>title: 我的博客</h2></blockquote>
-<p><img src="/assets/img/a-github-pages/pic15.png" alt=""><br><img src="/assets/img/a-github-pages/pic16.png" alt=""></p>
-<h2 id="五、部署到Github上"><a href="#五、部署到Github上" class="headerlink" title="五、部署到Github上"></a>五、部署到Github上</h2><blockquote>
-<p>1、申请<a href="https://github.com/" target="_blank" rel="noopener">Github</a>账号，（注意别忘了进行账号邮箱验证）</p>
-</blockquote>
-<p><img src="/assets/img/a-github-pages/pic17.png" alt=""></p>
-<blockquote>
-<p>2.new repository</p>
-</blockquote>
-<p><img src="/assets/img/a-github-pages/pic18.jpg" alt=""></p>
-<p><img src="/assets/img/a-github-pages/pic19.jpg" alt=""></p>
-<blockquote>
-<p>记得名字要一致。否则部署上GitHub的博客无法正常显示</p>
+<p>Template<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"hacker-news-list"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"hacker-news-header"</span>&gt;</span></span><br><span class="line">     <span class="comment">&lt;!--下拉改变--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">select</span> <span class="attr">v-model</span>=<span class="string">"tag"</span> @<span class="attr">change</span>=<span class="string">"changeFilter()"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">"story"</span>&gt;</span>Story<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line">      <span class="comment">&lt;!--或者点击改变--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span> @<span class="attr">click</span>=<span class="string">"changeFilter()"</span>&gt;</span>搜索<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">"hacker-news-item"</span> <span class="attr">v-for</span>=<span class="string">"(item, key) in list"</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">infinite-loading</span> @<span class="attr">infinite</span>=<span class="string">"infiniteHandler"</span> <span class="attr">ref</span>=<span class="string">"infiniteLoading"</span>&gt;</span>  <span class="comment">&lt;!--不要忘记设置这个 ref="infiniteLoading"--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span> <span class="attr">slot</span>=<span class="string">"no-more"</span>&gt;</span></span><br><span class="line">      There is no more Hacker News</span><br><span class="line">    <span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">infinite-loading</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
 </blockquote>
 <blockquote>
-<p>然后点击<br><img src="/assets/img/a-github-pages/pic20.png" alt=""></p>
+<p>Script<br><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> InfiniteLoading from <span class="string">'vue-infinite-loading'</span>;</span><br><span class="line"><span class="keyword">import</span> axios from <span class="string">'axios'</span>;</span><br><span class="line"></span><br><span class="line">export <span class="keyword">default</span> &#123;</span><br><span class="line">  <span class="keyword">data</span>() &#123;</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">      list: [],</span><br><span class="line">      tag: <span class="string">'story'</span>,</span><br><span class="line">    &#125;;</span><br><span class="line">  &#125;,</span><br><span class="line">  methods: &#123;</span><br><span class="line">    infiniteHandler($state) &#123;</span><br><span class="line">      const api=<span class="string">"http://xxxx.com/xxx"</span></span><br><span class="line">      axios.<span class="keyword">get</span>(api, &#123;   <span class="comment">//api为你请求数据地址</span></span><br><span class="line">        params: &#123;</span><br><span class="line">          tags: <span class="keyword">this</span>.tag,  <span class="comment">//改变的条件参数</span></span><br><span class="line">          page: <span class="keyword">this</span>.list.length / <span class="number">10</span> + <span class="number">1</span>,</span><br><span class="line">        &#125;,</span><br><span class="line">      &#125;).then((&#123; <span class="keyword">data</span> &#125;) =&gt; &#123;</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">data</span>.hits.length) &#123;</span><br><span class="line">          <span class="keyword">this</span>.list = <span class="keyword">this</span>.list.concat(<span class="keyword">data</span>.hits);</span><br><span class="line">          $state.loaded();</span><br><span class="line">          <span class="keyword">if</span> (<span class="keyword">this</span>.list.length / <span class="number">20</span> === <span class="number">10</span>) &#123;</span><br><span class="line">            $state.complete();</span><br><span class="line">          &#125;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">          $state.complete();</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;);</span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    <span class="comment">//改变条件条用此方法</span></span><br><span class="line">    changeFilter() &#123;</span><br><span class="line">      <span class="keyword">this</span>.list = [];</span><br><span class="line">      <span class="keyword">this</span>.$nextTick(() =&gt; &#123;</span><br><span class="line">        <span class="keyword">this</span>.$refs.infiniteLoading.$emit(<span class="string">'$InfiniteLoading:reset'</span>);</span><br><span class="line">      &#125;);</span><br><span class="line">    &#125;,</span><br><span class="line">  &#125;,</span><br><span class="line">  components: &#123;</span><br><span class="line">    InfiniteLoading,</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
 </blockquote>
-<blockquote>
-<p>3、在_config.yml进行配置 (注意要保存, 记得要有空格否则报错)<br><img src="/assets/img/a-github-pages/pic21.png" alt=""></p>
-</blockquote>
-<blockquote>
-<p> 4、安装<a href="https://github.com/hexojs/hexo-deployer-git" target="_blank" rel="noopener">hexo-deployer-git</a>自动部署发布工具</p>
-</blockquote>
-<blockquote>
-<p>   npm install hexo-deployer-git  –save</p>
-</blockquote>
-<p><img src="/assets/img/a-github-pages/pic22.png" alt=""></p>
-<blockquote>
-<p>5、发布到Github<br>    输入如下命令：hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</p>
-</blockquote>
-<p><img src="/assets/img/a-github-pages/pic23.png" alt=""></p>
-<blockquote>
-<p>第一次发布需要验证github账号 (部署时可能还会提示你全局绑定github用户名和邮箱)<br><img src="/assets/img/a-github-pages/pic24.png" alt=""></p>
-</blockquote>
-<blockquote>
-<p>发布成功后，我们在仓库中看到这个<br><img src="/assets/img/a-github-pages/pic25.png" alt=""></p>
-</blockquote>
-<blockquote>
-<p>6、测试访问<br>在浏览器输入：<a href="https://tuspring.github.io/" target="_blank" rel="noopener">https://tuspring.github.io/</a> (你的<a href="https://xxxxx.github.io/" target="_blank" rel="noopener">https://xxxxx.github.io/</a>)</p>
-</blockquote>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">最后，搭建完毕！ 噢耶</span><br></pre></td></tr></table></figure>
+
       
 
       
@@ -331,11 +245,11 @@ var _hmt = _hmt || [];
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">无限滚动</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">博客</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">下拉加载</a>
         		</li>
       		
 		</ul>
@@ -391,7 +305,7 @@ var _hmt = _hmt || [];
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACOklEQVR42u3aS3LDQAgFQN//0kpVtokmD5Bd0ahn5XL8ob0gDPB6xef4Pj8fn/317DVnn3P8OK93HAwMjNsyjuVZh54EnYS1/t51bBgYGM9h5Ek2CS4JJU/E68/HwMDAyAu+JJR1WYmBgYFxbcKtJuKjeDAwMDB6l9g8xHc07y67i2NgYNyQMRkMvPvxh+YbGBgY/5hxDE5SXFYTaDMSDAyMrRl5o3+S5aotvGRg8EregIGBsQXjkxfIq0YCv7weAwNja0Y1wa2R63flP8foJ8PAwNiUkY8k1yHOh5q9VQ8MDIwnMHofml9u12k3LyKb81gMDIybM6prFnnRVi0Bq0NNDAyMpzGuuhUmhWM1NUfPYGBgbM3Ik+A8dVbx6zK0PJXFwMC4LaN3mcy/oNqMq5abv1S4GBgY2zHma175Yll1wFC91mJgYOzKmF9Hk1Zdb3hZWLnAwMDYmtEbQ/auvr01jiR9Y2Bg7M3IE1lvbaK34JUn8Wi+gYGBcXNGtcU2XwLrDTXL12YMDIztGNUWf+/55AeatPMwMDCewJi02HoTibxAbO6JYGBgbMSY99snV9C89X/ZwAADA+NWjKN48uWMfKkiT+inCRoDA2NrRjXJ9pr+OSkvLpv/NzAwMG7LqKbO+SLXZNjwx8oFBgbG1owkmVaLvPzTqpdnDAwMjEl12Wux5cPR05gxMDAwWoVjHvRkpIqBgfEcRnUwWR005qsVzSISAwNja8Z8MFANojf47K1oYGBg3JzxBQjcGQYaDov+AAAAAElFTkSuQmCC" alt="微信分享二维码">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACHUlEQVR42u3aQXLDMAgFUN//0u4BMnY+YHcm0tOq0zoWLwuKBMcRr/NjXT1z9fz9Xz9/f7yxMDAwfpZx3q5k46sg8kDzfS+pGBgYGzCSBDpn5/g8NgwMDIz7Z66SZjXc6r4YGBgY1dflh9uEjYGBgTE5xM4PnG+8EwMDYwdGfuv+/z+/0t/AwMD4KcZZXL02532I53hhYGCszZhfpU0GJqqH3vt4MDAwVmXkx8XegEXvyPrlW/98EgMDY2lGniLz4Yl5yVgtKzEwMNZmJAmu2rzM31CuYa+KSAwMjI0Z1SGMHJMXhdHuGBgYSzOqAxA9WK9VUL28w8DAWJsRpbPi9dyzCbraWsDAwFiJ8VQQebNzPtl12cLEwMBYlPHUaEW1hVBtlOYHbAwMjPUY1dQ2aRv0mpRRmYiBgbEZo3px3yv48vcUhi0wMDAWZfQSZTQA8UJb9IH/JBgYGD/IyC/ayilv3AYoz4xgYGAsyugl2SQFVwvHyW8wMDB2Y0wSazWIyY5fEi4GBsaijOqwVzIu9uxXcOQmDAyMRRm9EbHqNVmPGl3bYWBgLMo4i+vZZkD1s+WGJQYGxhKMfPWQvVIvT+JlGAYGxs8ykuB6r65SRwkXAwNjA8Yk8VWPtZOy70udi4GBgREnxF5YSSrHwMDASDbIP5Wk4/mVHAYGxj6M+RhrkpqTA221nYmBgbEDo1fAVS/RqkEkSRYDA2MDxh8/MbJQRfXCRQAAAABJRU5ErkJggg==" alt="微信分享二维码">
     </div>
 </div>
 
@@ -405,15 +319,11 @@ var _hmt = _hmt || [];
   
 <nav id="article-nav">
   
-    <a href="/2017/01/22/a-github-pages/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          GitHub Pages绑定域名
-        
-      </div>
-    </a>
   
+    <a href="/2018/03/30/web-an-oral-quiz/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">浅谈前端面试那些事</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
@@ -441,7 +351,7 @@ var _hmt = _hmt || [];
   
 
   
-  <div id="SOHUCS" sid="a-tuspring-blog" ></div> 
+  <div id="SOHUCS" sid="vue-infinite-loading-plugin" ></div> 
 <script type="text/javascript"> 
 (function(){ 
 var appid = "cytxJgion"; 
