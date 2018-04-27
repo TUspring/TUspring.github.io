@@ -15,7 +15,7 @@
 <meta property="og:url" content="//tuspring.com/2018/04/20/vue-infinite-loading-plugin/index.html">
 <meta property="og:site_name" content="Tuspring的博客">
 <meta property="og:description" content="最新做vue项目用到下拉滚动加载数据功能，由于选的UI库（element）没有这个组件，就用Vue-infinite-loading 这个插件代替，使用中遇到的一些问题及使用方法，总结作记录！  安装：npm install vue-infinite-loading –save">
-<meta property="og:updated_time" content="2018-04-27T16:48:45.684Z">
+<meta property="og:updated_time" content="2018-04-27T17:00:41.193Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vue2.0无限滚动加载数据插件">
 <meta name="twitter:description" content="最新做vue项目用到下拉滚动加载数据功能，由于选的UI库（element）没有这个组件，就用Vue-infinite-loading 这个插件代替，使用中遇到的一些问题及使用方法，总结作记录！  安装：npm install vue-infinite-loading –save">
@@ -232,9 +232,46 @@ var _hmt = _hmt || [];
 <blockquote>
 <p>Script<br><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> InfiniteLoading from <span class="string">'vue-infinite-loading'</span>;</span><br><span class="line"><span class="keyword">import</span> axios from <span class="string">'axios'</span>;</span><br><span class="line"></span><br><span class="line">export <span class="keyword">default</span> &#123;</span><br><span class="line">  <span class="keyword">data</span>() &#123;</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">      list: [],</span><br><span class="line">      tag: <span class="string">'story'</span>,</span><br><span class="line">    &#125;;</span><br><span class="line">  &#125;,</span><br><span class="line">  methods: &#123;</span><br><span class="line">    infiniteHandler($state) &#123;</span><br><span class="line">      const api=<span class="string">"http://xxxx.com/xxx"</span></span><br><span class="line">      axios.<span class="keyword">get</span>(api, &#123;   <span class="comment">//api为你请求数据地址</span></span><br><span class="line">        params: &#123;</span><br><span class="line">          tags: <span class="keyword">this</span>.tag,  <span class="comment">//改变的条件参数</span></span><br><span class="line">          page: <span class="keyword">this</span>.list.length / <span class="number">10</span> + <span class="number">1</span>,</span><br><span class="line">        &#125;,</span><br><span class="line">      &#125;).then((&#123; <span class="keyword">data</span> &#125;) =&gt; &#123;</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">data</span>.hits.length) &#123;</span><br><span class="line">          <span class="keyword">this</span>.list = <span class="keyword">this</span>.list.concat(<span class="keyword">data</span>.hits);</span><br><span class="line">          $state.loaded();</span><br><span class="line">          <span class="keyword">if</span> (<span class="keyword">this</span>.list.length / <span class="number">20</span> === <span class="number">10</span>) &#123;</span><br><span class="line">            $state.complete();</span><br><span class="line">          &#125;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">          $state.complete();</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;);</span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    <span class="comment">//改变条件条用此方法</span></span><br><span class="line">    changeFilter() &#123;</span><br><span class="line">      <span class="keyword">this</span>.list = [];</span><br><span class="line">      <span class="keyword">this</span>.$nextTick(() =&gt; &#123;</span><br><span class="line">        <span class="keyword">this</span>.$refs.infiniteLoading.$emit(<span class="string">'$InfiniteLoading:reset'</span>);</span><br><span class="line">      &#125;);</span><br><span class="line">    &#125;,</span><br><span class="line">  &#125;,</span><br><span class="line">  components: &#123;</span><br><span class="line">    InfiniteLoading,</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
 </blockquote>
+<h3 id="4-其他用法（特殊条件手动触发）"><a href="#4-其他用法（特殊条件手动触发）" class="headerlink" title="4.其他用法（特殊条件手动触发）"></a>4.其他用法（特殊条件手动触发）</h3><blockquote>
+<p>在大多数情况下，我们希望立即为空列表加载数据，这也是该组件的默认行为。如果你只想控制第一次加载，你可以简单地使用v-if和v-else指令来实现它,但是如果，在一些复杂的情况下，我们需要手动每三页加载一次数据，我们可以使用该方法，</p>
+</blockquote>
+<blockquote>
+<p>这里我不做详细介绍。有这个需求的可以去看看官方文档：<a href="https://github.com/PeachScript/vue-infinite-loading" target="_blank" rel="noopener">vue-infinite-loading</a></p>
+</blockquote>
 
       
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/alipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/weixin.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -454,15 +491,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">域名</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">博客</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">域名</a>
               </li>
              
               <li class="article-tag-list-item">

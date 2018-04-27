@@ -5,7 +5,7 @@
     
   <url>
     <loc>//tuspring.com/2018/04/20/vue-infinite-loading-plugin/</loc>
-    <lastmod>2018-04-27T16:48:45.684Z</lastmod>
+    <lastmod>2018-04-27T17:00:41.193Z</lastmod>
     <data>
         <display>
         <title>vue2.0无限滚动加载数据插件</title>
@@ -49,9 +49,9 @@
         <title>GitHub Pages绑定域名</title>
         <pubTime>2017-01-22T10:40:00.000Z</pubTime>
         
-        <tag>域名</tag>
-         
         <tag>hexo</tag>
+         
+        <tag>域名</tag>
          
          
            
